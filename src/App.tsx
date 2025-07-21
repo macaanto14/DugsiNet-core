@@ -7,6 +7,9 @@ import Dashboard from './pages/Dashboard';
 import StudentList from './pages/Students/StudentList';
 import StaffList from './pages/Staff/StaffList';
 import AttendanceView from './pages/Attendance/AttendanceView';
+import CurriculumList from './pages/Curriculum/CurriculumList';
+import CourseForm from './pages/Curriculum/CourseForm';
+import CourseDetail from './pages/Curriculum/CourseDetail';
 
 const ProtectedRoute: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const { user, loading } = useAuth();
@@ -38,6 +41,10 @@ const AppRoutes: React.FC = () => {
         <Route path="students" element={<StudentList />} />
         <Route path="staff" element={<StaffList />} />
         <Route path="attendance" element={<AttendanceView />} />
+        <Route path="curriculum" element={<CurriculumList />} />
+        <Route path="curriculum/courses/new" element={<CourseForm />} />
+        <Route path="curriculum/courses/:id" element={<CourseDetail />} />
+        <Route path="curriculum/courses/:id/edit" element={<CourseForm />} />
         <Route path="timetable" element={<div className="p-8">Timetable - Coming Soon</div>} />
         <Route path="exams" element={<div className="p-8">Exams - Coming Soon</div>} />
         <Route path="library" element={<div className="p-8">Library - Coming Soon</div>} />

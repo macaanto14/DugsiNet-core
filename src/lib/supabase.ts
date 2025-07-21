@@ -110,4 +110,14 @@ export const db = {
   getCurrentAcademicYear: () => supabase.from('academic_years').select('*').eq('is_current', true).single(),
   createAcademicYear: (year: any) => supabase.from('academic_years').insert(year),
   updateAcademicYear: (id: string, updates: any) => supabase.from('academic_years').update(updates).eq('id', id),
+
+  // Curriculum
+  getSubjects: () => supabase.from('subjects').select('*'),
+  getCourses: () => supabase.from('courses').select(`
+    *,
+    subject:subjects(*),
+    academic_year:academic_years(name)
+  `),
+  getTopics: (courseId: string) => supabase.from('curriculum_topics').select('*').eq('course_id', courseId),
+  getLessons: (topicId: string) => supabase.from('lessons').select('*').eq('topic_id', topicId),
 };
