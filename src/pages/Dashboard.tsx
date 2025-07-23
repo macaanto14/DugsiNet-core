@@ -1,7 +1,7 @@
 import React from 'react';
 import { useAuth } from '../contexts/AuthContext';
 import DashboardStats from '../components/Dashboard/DashboardStats';
-import { Calendar, Clock, Bell, TrendingUp } from 'lucide-react';
+import { Calendar, Clock, Bell, TrendingUp, Users, UserCheck, BookOpen } from 'lucide-react';
 
 const Dashboard: React.FC = () => {
   const { user, hasRole } = useAuth();
