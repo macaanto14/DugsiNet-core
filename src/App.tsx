@@ -45,6 +45,21 @@ const AppRoutes: React.FC = () => {
         <Route path="curriculum/courses/new" element={<CourseForm />} />
         <Route path="curriculum/courses/:id" element={<CourseDetail />} />
         <Route path="curriculum/courses/:id/edit" element={<CourseForm />} />
+        <Route path="students/onboarding" element={<div className="p-8">Student Onboarding - Coming Soon</div>} />
+        <Route path="students/profiles" element={<div className="p-8">Student Profiles - Coming Soon</div>} />
+        <Route path="students/admissions" element={<div className="p-8">Student Admissions - Coming Soon</div>} />
+        <Route path="staff/new" element={<div className="p-8">Add Staff - Coming Soon</div>} />
+        <Route path="staff/schedule" element={<div className="p-8">Staff Schedule - Coming Soon</div>} />
+        <Route path="attendance/reports" element={<div className="p-8">Attendance Reports - Coming Soon</div>} />
+        <Route path="attendance/records" element={<div className="p-8">Attendance Records - Coming Soon</div>} />
+        <Route path="curriculum/subjects" element={<div className="p-8">Subjects - Coming Soon</div>} />
+        <Route path="curriculum/lessons" element={<div className="p-8">Lessons - Coming Soon</div>} />
+        <Route path="results" element={<div className="p-8">Results - Coming Soon</div>} />
+        <Route path="payments" element={<div className="p-8">Payments - Coming Soon</div>} />
+        <Route path="finance/reports" element={<div className="p-8">Financial Reports - Coming Soon</div>} />
+        <Route path="documents/id-cards" element={<div className="p-8">ID Cards - Coming Soon</div>} />
+        <Route path="documents/certificates" element={<div className="p-8">Certificates - Coming Soon</div>} />
+        <Route path="documents/reports" element={<div className="p-8">Document Reports - Coming Soon</div>} />
         <Route path="timetable" element={<div className="p-8">Timetable - Coming Soon</div>} />
         <Route path="exams" element={<div className="p-8">Exams - Coming Soon</div>} />
         <Route path="library" element={<div className="p-8">Library - Coming Soon</div>} />
@@ -53,7 +68,6 @@ const AppRoutes: React.FC = () => {
         <Route path="transport" element={<div className="p-8">Transport - Coming Soon</div>} />
         <Route path="inventory" element={<div className="p-8">Inventory - Coming Soon</div>} />
         <Route path="payroll" element={<div className="p-8">Payroll - Coming Soon</div>} />
-        <Route path="documents" element={<div className="p-8">ID & Certificates - Coming Soon</div>} />
         <Route path="activities" element={<div className="p-8">Activities - Coming Soon</div>} />
         <Route path="settings" element={<div className="p-8">Settings - Coming Soon</div>} />
       </Route>
