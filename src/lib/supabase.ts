@@ -3,6 +3,14 @@ import { createClient } from '@supabase/supabase-js';
 const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || '';
 const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY || '';
 
+// Check if environment variables are properly configured
+if (!supabaseUrl || !supabaseAnonKey) {
+  console.error('Missing Supabase environment variables. Please create a .env file with:');
+  console.error('VITE_SUPABASE_URL=your_supabase_url_here');
+  console.error('VITE_SUPABASE_ANON_KEY=your_supabase_anon_key_here');
+  throw new Error('Supabase configuration is missing. Please check your .env file.');
+}
+
 export const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
 // Auth helpers
