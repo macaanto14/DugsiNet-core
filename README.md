@@ -3,10 +3,12 @@
 
 Dugsinet is a modern, brandable platform inspired by Somali culture, designed for academic and tech-centered communities.
 
+# Login Page 
+![alt text](image-3.png)
 
-![alt text](image-1.png)
+# Dashboard 
 
-![alt text](image-2.png)
+![alt text](image-4.png)
 
 
 ---
