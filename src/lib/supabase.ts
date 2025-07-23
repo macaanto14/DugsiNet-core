@@ -53,13 +53,13 @@ export const db = {
   // Students
   getStudents: () => supabase.from('students').select(`
     *,
-    user:users(full_name, email),
+    user:users!students_user_id_fkey(full_name, email),
     class:classes(name, grade_level, section),
     parent:users!students_parent_id_fkey(full_name, email)
   `),
   getStudentById: (id: string) => supabase.from('students').select(`
     *,
-    user:users(full_name, email),
+    user:users!students_user_id_fkey(full_name, email),
     class:classes(name, grade_level, section),
     parent:users!students_parent_id_fkey(full_name, email)
   `).eq('id', id).single(),
