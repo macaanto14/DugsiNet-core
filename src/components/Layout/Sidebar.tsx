@@ -1,46 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthContext';
-import {
-  Home,
-  Users,
-  UserCheck,
-  Calendar,
-  ClipboardList,
-  BookOpen,
-  GraduationCap,
-  Layers,
-  DollarSign,
-  Building,
-  Bus,
-  Package,
-  CreditCard,
-  FileText,
-  Activity,
-  Settings,
-  LogOut,
-  ChevronDown,
-  ChevronRight,
-  UserPlus,
-  UserSearch,
-  School,
-  Clock,
-  BarChart3,
-  FileCheck,
-  CalendarDays,
-  TestTube,
-  Trophy,
-  Library,
-  Receipt,
-  Wallet,
-  PieChart,
-  Bed,
-  Car,
-  Archive,
-  IdCard,
-  Award,
-  TrendingUp,
-} from 'lucide-react';
+import { Home, Users, UserCheck, Calendar, ClipboardList, BookOpen, GraduationCap, Layers, DollarSign, Building, Bus, Package, CreditCard, FileText, Activity, Settings, LogOut, ChevronDown, ChevronRight, UserPlus, UserSearch, School, Clock, BarChart3, FileCheck, CalendarDays, TestTube, Trophy, Library, Receipt, Wallet, PieChart, Bed, Car, Archive, Car as IdCard, Award, TrendingUp } from 'lucide-react';
 
 interface MenuItem {
   icon: React.ComponentType<any>;
